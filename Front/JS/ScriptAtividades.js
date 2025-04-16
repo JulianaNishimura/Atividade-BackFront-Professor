@@ -47,7 +47,8 @@ function transformar(dados) {
         botaoExcluir.className = "delete";
         botaoExcluir.type = "button";
         botaoExcluir.value = "Excluir";
-        botaoExcluir.onclick = () => deletarItem(item.id);
+        botaoExcluir.id = item.id;
+        botaoExcluir.onclick = () => deletarItem(this.id);
 
 
         numeroColuna.textContent = item.id;
